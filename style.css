@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    font-size: 10px;
+    background: white;
+  }
+  
+  button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: all 0.5s ease-in-out;
+    animation: move 0.5s ease-in-out;
+    display: block;
+    padding: 0.825em;
+    margin: 0 auto;
+  
+    background-color: rgb(202, 243, 202);
+    cursor: pointer;
+    font-size: 2.5rem;
+    position: relative;
+    /* top: 100px;
+      left: 100px; */
+  }
+  
+  button:active {
+    outline: none;
+    cursor: pointer;
+    transform: translate(40px, 40px);
+  }
+  
+  .photobooth {
+    background: white;
+    max-width: 150rem;
+    margin: 1rem auto;
+  }
+  
+  /*clearfix*/
+  .photobooth:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+  .main-photo {
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .photo {
+    width: 100%;
+    float: left;
+    margin-bottom: 2em;
+  }
+  
+  .player {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 150px;
+  }
+  
+  .controls {
+    text-align: center;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .rgb {
+    border: 1px solid green;
+    padding: 1em;
+  
+    align-items: center;
+  }
+  
+  /*
+    */
+  
+  .strip {
+    padding: 2rem;
+  }
+  
+  .strip img {
+    width: 100px;
+    overflow-x: scroll;
+    padding: 0.8rem 0.8rem 2.5rem 0.8rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    background: rgb(235, 196, 196);
+  }
+  
+  .strip a:nth-child(5n + 1) img {
+    transform: rotate(10deg);
+  }
+  .strip a:nth-child(5n + 2) img {
+    transform: rotate(-2deg);
+  }
+  .strip a:nth-child(5n + 3) img {
+    transform: rotate(8deg);
+  }
+  .strip a:nth-child(5n + 4) img {
+    transform: rotate(-11deg);
+  }
+  .strip a:nth-child(5n + 5) img {
+    transform: rotate(12deg);
+  }
+  
